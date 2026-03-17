@@ -1,37 +1,38 @@
 # Yashman Singh
 
-CS @ Georgia Tech (Intelligence + FinTech) — interested in AI systems, local inference, and backend infrastructure.
+CS @ Georgia Tech · Intelligence + FinTech · Currently @ **EXL**
 
-Currently interning at EXL building ML-powered code modernization tooling.
+I build things close to the metal — inference runtimes, AI pipelines, systems that have to work under pressure.
 
----
+<br>
 
-### Some Recent Projects
+## 🔨 Recent Work
 
-**[Aegis](https://github.com/Yashman-Singh/Aegis)** — Local LLM inference scheduler and VRAM orchestrator. Sits between your apps and Ollama, managing GPU memory, queuing inference jobs, and preventing OOM crashes on Apple Silicon.
+### [Aegis](https://github.com/Yashman-Singh/Aegis) &nbsp;—&nbsp; Local LLM Inference Scheduler
+> Ollama has a VRAM management blind spot. Aegis fixes it.
 
-**[Hermes](https://github.com/Yashman-Singh/hermes-protocol)** — Privacy-first voice dictation for macOS. On-device speech pipeline using Parakeet TDT on the Apple Neural Engine with optional local LLM refinement via Ollama. No audio leaves your device.
+A background runtime that sits between your apps and Ollama — priority job queuing, atomic VRAM reservation, forced model eviction, and a concurrent scheduler with a per-model `IDLE → LOADED → EVICTING` state machine. Built to prevent OOM crashes on Apple Silicon.
 
----
-
-### Stack
-Python · TypeScript · Swift · FastAPI · PostgreSQL · AWS · PyTorch · NextJS
+`Python` `FastAPI` `asyncio` `SQLite` `Next.js` `Metal API`
 
 ---
 
-[LinkedIn](https://linkedin.com/in/yashman) · yashman.p.singh@gmail.com
+### [Hermes](https://github.com/Yashman-Singh/hermes-protocol) &nbsp;—&nbsp; Voice Dictation for macOS
+> Whisper-fast dictation, fully on-device, no cloud.
 
-<!--
-**Yashman-Singh/Yashman-Singh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Native macOS app with a sentence-boundary-aware ASR pipeline (Parakeet TDT on the Apple Neural Engine), optional local LLM refinement via Ollama, and universal text injection across native and Electron apps. Nothing leaves your machine.
 
-Here are some ideas to get you started:
+`Swift` `AVAudioEngine` `FluidAudio` `Ollama` `Accessibility API`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<br>
+
+## 🧰 Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat&logo=swift&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
